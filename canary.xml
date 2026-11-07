@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE EntityDescriptor [
+  <!ENTITY ent1 "ENT1-CANARY-4242">
+  <!ENTITY ext1 SYSTEM "file:///etc/hostname">
+]>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://&ent1;.canary.test/metadata">
+  <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.&ent1;.canary.test/sso"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://slo.canary.test/slo"/>
+    <KeyDescriptor use="signing"><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509Certificate>MIIDdTCCAl2gAwIBAgIGAX</X509Certificate></X509Data></KeyInfo></KeyDescriptor>
+  </IDPSSODescriptor>
+</EntityDescriptor>
