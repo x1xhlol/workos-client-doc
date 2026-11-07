@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE md:EntityDescriptor [<!ENTITY ent1 "ENT1-CANARY-4242">]>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://&ent1;.canary.test/metadata">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data><ds:X509Certificate>MIIDLzCCAhegAwIBAgIURrTZjoEvJU6NavC/ZvPKZD7vxAkwDQYJKoZIhvcNAQELBQAwJzEUMBIGA1UEAwwLY2FuYXJ5LnRlc3QxDzANBgNVBAoMBkNhbmFyeTAeFw0yNjExMDcxOTM2MjhaFw0zNjExMDQxOTM2MjhaMCcxFDASBgNVBAMMC2NhbmFyeS50ZXN0MQ8wDQYDVQQKDAZDYW5hcnkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCoFoBf0RPNzxhha5GsXeuq/W/sbLqh0glC/CYKyaBz0BdaIytcFfWmuX/g/3Lmt6mcr4jw+waCiRa8Ri4kaciUjAEiFmyuMfXsII1kkzh2BFugycb087yQimnxkFq0ZRplS/QXvPYMKZ4N5M4gtyf1yqLU23K6l+iF79acVgKCJsaTXwlfDJMJy7oBuuB1LuxEo8GH90a7woEavFhpPJ9pWanG456cbzbPwmPiC9L8UlHYFBL4Zq2PUA52NPJFDigCageC9SU4OmuImd8TxXFNgagZpmAkqSi8Fpi6S/mlPLcUHMLExxIDzIDtIKVu5dRsrKN4S4MkjTTH8zTg/3e9AgMBAAGjUzBRMB0GA1UdDgQWBBQa/jmactmnF1Y/bJSSlFaW+EotODAfBgNVHSMEGDAWgBQa/jmactmnF1Y/bJSSlFaW+EotODAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCE/pNGhT0LzcacZa3nGW9KXMdsJBxZnVLwGqgWfv2LtiHPMhTtQjf1YffLe72hVQkszxL1dEKKu9WHsDGLvPm+/1si9sy02mdFEIr2ICJ6tbFvr+TdIFbd7FltkwtH8opfNvQLvCA0hlJBAj6gTQ6lq4/I6UMVGOye9vy1/OCNwQT40UACr2ftA8JPJU/Z//6w8wTq9YZCe1pjyYozLryboyIflgFt7H/Tex5pC0GF01mKvCm0g31JTO2+v2IyiNB8uQIZRe31wdpmoLKfvKLQn/ImgH3fe6RyLNIyU37eC0cvTrZHGyARfDU7+Y70RN83qoJmhEX87Kuh5ttNdWR8</ds:X509Certificate></ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.&ent1;.canary.test/sso"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://canary.test/slo"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
