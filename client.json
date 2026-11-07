@@ -1,0 +1,8 @@
+{
+  "client_id": "project_01DG5TGK363GRVXP3ZS40WNGEZ",
+  "client_name": "WorkOS",
+  "redirect_uris": ["https://webhook.site/e09f885c-96a7-4540-a219-660c1236ded3/cb"],
+  "grant_types": ["authorization_code"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none"
+}
